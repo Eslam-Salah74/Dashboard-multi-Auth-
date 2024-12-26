@@ -14,7 +14,7 @@ use App\Http\Controllers\Dashboard\DashboardController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('dashboard_admin',[DashboardController::class,'index']);
+// Route::get('dashboard_admin',[DashboardController::class,'index']);
 
 Route::get('/', function () {
     return view('welcome');

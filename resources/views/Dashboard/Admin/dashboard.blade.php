@@ -6,15 +6,7 @@
 <link href="{{URL::asset('assets/dashboard/plugins/jqvmap/jqvmap.min.css')}}" rel="stylesheet">
 @endsection
 @section('page-header')
-<!-- Authentication -->
-@if(auth('web')->check())
-<form method="POST" action="{{ route('logout.user') }}">
-@else
-<form method="POST" action="{{ route('logout.admin') }}">
-@endif
-@csrf
-<a class="dropdown-item"href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();"><i class="bx bx-log-out"></i>تسجيل الخروج</a>
-</form>
+
 				<!-- breadcrumb -->
 				<div class="breadcrumb-header justify-content-between">
 					<div class="left-content">

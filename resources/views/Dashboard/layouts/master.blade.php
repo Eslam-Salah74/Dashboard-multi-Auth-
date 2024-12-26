@@ -22,16 +22,14 @@
 			@include('Dashboard.layouts.main-header')
 			<!-- container -->
 			<div class="container-fluid">
+
 				@yield('page-header')
 				@yield('content')
 				@include('Dashboard.layouts.sidebar')
 				@include('Dashboard.layouts.models')
             	@include('Dashboard.layouts.footer')
 				@include('Dashboard.layouts.footer-scripts')
-
-
-
-                @include('Dashboard.layouts.footer-scripts')
+            </div>
 	</body>
-                </html>
+</html>
 
